@@ -36,7 +36,7 @@ String INDEX_HTML = R"(<!DOCTYPE html>
 
   var setActions = function(){
     doSend('(update)');
-    $.get('https://api.github.com/repos/nidayand/'+repo+'/releases', function(data){
+    $.get('https://api.github.com/repos/fernac03/'+repo+'/releases', function(data){
       if (data.length>0 && data[0].tag_name !== cversion){
         $('#cversion').text(cversion);
         $('#nversion').text(data[0].tag_name);
